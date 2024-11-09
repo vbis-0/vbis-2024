@@ -10,7 +10,7 @@ class HomeController extends BaseController
 
     public function home()
     {
-        $this->view = new View();
+        $this->view->render('home', 'main', null);
     }
 
 
