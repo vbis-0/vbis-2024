@@ -1,18 +1,13 @@
 <?php
 namespace app\controllers;
 
+use app\core\BaseController;
 use app\core\View;
 
-class UserController
+class UserController extends BaseController
 {
-    public function userCreate()
-    {
-        return "User Created";
-    }
-
     public function readUser()
     {
-        $view = new View();
-        echo $view->render('getUser', 'main');
+        $this->view->render('getUser', 'main');
     }
 }

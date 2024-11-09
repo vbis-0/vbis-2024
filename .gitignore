@@ -79,3 +79,4 @@ fabric.properties
 #custom
 .idea/**
 .idea/
+.idea/workspace.xml
