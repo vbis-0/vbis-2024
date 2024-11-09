@@ -7,15 +7,17 @@ class View
 
     public function render($viewName, $layoutName)
     {
-        ob_start();
-        include_once __DIR__ . "/../views/$viewName.php";
-        return ob_get_clean();
+        $layout = $this->renderLayout($layoutName);
+        $view = $this->renderPartialView($viewName);
+
+        echo str_replace("{{ RENDER_SECTION }}", $view, $layout);
+
     }
 
     public function renderLayout($layoutName)
     {
         ob_start();
-        include_once __DIR__ . "/../views/$viewName.php";
+        include_once __DIR__ . "/../views/layouts/$layoutName.php";
         return ob_get_clean();
     }
 

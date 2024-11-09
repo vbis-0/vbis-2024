@@ -9,7 +9,7 @@ class HomeController
     public function home()
     {
         $view = new View();
-        echo $view->render('home', 'main');
+        return $view->render('home', 'main');
     }
 
 }
