@@ -1,777 +1,119 @@
+<?php
+
+use app\core\Application;
+
+//var_dump(Application::$app->session->get('user'));
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Pharma &mdash; Colorlib Template</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
-    <link rel="stylesheet" href="../../public/assets/fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <title>Pharma &mdash; Colorlib Template</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
-        <link rel="stylesheet" href="../../public/assets/fonts/icomoon/style.css">
-
-        <link rel="stylesheet" href="../../public/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../public/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="../../public/assets/css/jquery-ui.css">
-        <link rel="stylesheet" href="../../public/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../../public/assets/css/owl.theme.default.min.css">
-
-
-        <link rel="stylesheet" href="../../public/assets/css/aos.css">
-
-        <link rel="stylesheet" href="../../public/assets/css/style.css">
-
-    </head>
-
-<body>
-
-<div class="site-wrap">
-
-
-    <div class="site-navbar py-2">
-
-        <div class="search-wrap">
-            <div class="container">
-                <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-                <form action="#" method="post">
-                    <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-                </form>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="logo">
-                    <div class="site-logo">
-                        <a href="index.html" class="js-logo-clone">Pharma</a>
-                    </div>
-                </div>
-                <div class="main-nav d-none d-lg-block">
-                    <nav class="site-navigation text-right text-md-center" role="navigation">
-                        <ul class="site-menu js-clone-nav d-none d-lg-block">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="shop.html">Store</a></li>
-                            <li class="has-children">
-                                <a href="#">Dropdown</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Supplements</a></li>
-                                    <li class="has-children">
-                                        <a href="#">Vitamins</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Supplements</a></li>
-                                            <li><a href="#">Vitamins</a></li>
-                                            <li><a href="#">Diet &amp; Nutrition</a></li>
-                                            <li><a href="#">Tea &amp; Coffee</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Diet &amp; Nutrition</a></li>
-                                    <li><a href="#">Tea &amp; Coffee</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="icons">
-                    <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-                    <a href="cart.html" class="icons-btn d-inline-block bag">
-                        <span class="icon-shopping-bag"></span>
-                        <span class="number">2</span>
-                    </a>
-                    <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                                class="icon-menu"></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-blocks-cover" style="background-image: url('../../public/assets/images/hero_1.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
-                    <div class="site-block-cover-content text-center">
-                        <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
-                        <h1>Welcome To Pharma</h1>
-                        <p>
-                            <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row align-items-stretch section-overlap">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap bg-primary h-100">
-                        <a href="#" class="h-100">
-                            <h5>Free <br> Shipping</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap h-100">
-                        <a href="#" class="h-100">
-                            <h5>Season <br> Sale 50% Off</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap bg-warning h-100">
-                        <a href="#" class="h-100">
-                            <h5>Buy <br> A Gift Card</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">Popular Products</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <span class="tag">Sale</span>
-                    <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Bioderma</a></h3>
-                    <p class="price"><del>95.00</del> &mdash; $55.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Chanca Piedra</a></h3>
-                    <p class="price">$70.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                    <p class="price">$120.00</p>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-                    <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
-                    <p class="price"><del>45.00</del> &mdash; $20.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_05.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">CLA Core</a></h3>
-                    <p class="price">$38.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <span class="tag">Sale</span>
-                    <a href="shop-single.html"> <img src="images/product_06.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Poo Pourri</a></h3>
-                    <p class="price"><del>$89</del> &mdash; $38.00</p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="shop.html" class="btn btn-primary px-4 py-3">View All Products</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="site-section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">New Products</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 block-3 products-wrap">
-                    <div class="nonloop-block-3 owl-carousel">
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">Testimonials</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 block-3 products-wrap">
-                    <div class="nonloop-block-3 no-direction owl-carousel">
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="../../public/assets/images/person_1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Kelly Holmes</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="../../public/assets/images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Rebecca Morando</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="../../public/assets/images/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Lucas Gallone</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="../../public/assets/images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Andrew Neel</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section bg-secondary bg-image" style="background-image: url('../../public/assets/images/bg_2.jpg');">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('../../public/assets/images/bg_1.jpg');">
-                        <div class="banner-1-inner align-self-center">
-                            <h2>Pharma Products</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('../../public/assets/images/bg_2.jpg');">
-                        <div class="banner-1-inner ml-auto  align-self-center">
-                            <h2>Rated by Experts</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-
-                    <div class="block-7">
-                        <h3 class="footer-heading mb-4">About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
-                            sed dolorum excepturi iure eaque, aut unde.</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-                    <h3 class="footer-heading mb-4">Quick Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Supplements</a></li>
-                        <li><a href="#">Vitamins</a></li>
-                        <li><a href="#">Diet &amp; Nutrition</a></li>
-                        <li><a href="#">Tea &amp; Coffee</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="block-5 mb-5">
-                        <h3 class="footer-heading mb-4">Contact Info</h3>
-                        <ul class="list-unstyled">
-                            <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                            <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                            <li class="email">emailaddress@domain.com</li>
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                    <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-                        with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"
-                                                                                 class="text-primary">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/aos.js"></script>
-
-<script src="js/main.js"></script>
-
-</body>
-
-</html>bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-
-    <link rel="stylesheet" href="../../public/assets/css/aos.css">
-
-    <link rel="stylesheet" href="../../public/assets/css/style.css">
-
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        VBIS 2024/2025
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet" />
 </head>
 
-<body>
-
-<div class="site-wrap">
-
-
-    <div class="site-navbar py-2">
-
-        <div class="search-wrap">
-            <div class="container">
-                <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-                <form action="#" method="post">
-                    <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-                </form>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="logo">
-                    <div class="site-logo">
-                        <a href="index.html" class="js-logo-clone">Pharma</a>
+<body class="g-sidenav-show   bg-gray-100">
+<div class="min-height-300 bg-dark position-absolute w-100"></div>
+<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+       id="sidenav-main">
+    <div class="sidenav-header">
+        <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+           aria-hidden="true" id="iconSidenav"></i>
+        <a class="navbar-brand m-0" href="/"
+           target="_blank">
+            <img src="../assets/img/logo-ct-dark.png" width="26px" height="26px" class="navbar-brand-img h-100"
+                 alt="main_logo">
+            <span class="ms-1 font-weight-bold"> VBIS 2024/2025</span>
+        </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="/">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-tv-2 text-dark text-sm opacity-10"></i>
                     </div>
-                </div>
-                <div class="main-nav d-none d-lg-block">
-                    <nav class="site-navigation text-right text-md-center" role="navigation">
-                        <ul class="site-menu js-clone-nav d-none d-lg-block">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="shop.html">Store</a></li>
-                            <li class="has-children">
-                                <a href="#">Dropdown</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Supplements</a></li>
-                                    <li class="has-children">
-                                        <a href="#">Vitamins</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Supplements</a></li>
-                                            <li><a href="#">Vitamins</a></li>
-                                            <li><a href="#">Diet &amp; Nutrition</a></li>
-                                            <li><a href="#">Tea &amp; Coffee</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Diet &amp; Nutrition</a></li>
-                                    <li><a href="#">Tea &amp; Coffee</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="icons">
-                    <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-                    <a href="cart.html" class="icons-btn d-inline-block bag">
-                        <span class="icon-shopping-bag"></span>
-                        <span class="number">2</span>
-                    </a>
-                    <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                                class="icon-menu"></span></a>
-                </div>
+                    <span class="nav-link-text ms-1">Home</span>
+                </a>
+            </li>
+            <li class="nav-item mt-3">
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/users">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/products">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-folder-17 text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Products</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/processLogout">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-user-run text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidenav-footer mx-3 ">
+        <div class="card card-plain shadow-none" id="sidenavCard">
+            <img class="w-50 mx-auto" src="../assets/img/illustrations/icon-documentation.svg"
+                 alt="sidebar_illustration">
+            <div class="card-body text-center p-3 w-100 pt-0">
             </div>
         </div>
     </div>
-
-    <div class="site-blocks-cover" style="background-image: url('images/hero_1.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
-                    <div class="site-block-cover-content text-center">
-                        <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
-                        <h1>Welcome To Pharma</h1>
-                        <p>
-                            <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+</aside>
+<main class="main-content position-relative border-radius-lg ">
+    <div class="container-fluid py-4">
+        {{ RENDER_SECTION }}
     </div>
+</main>
 
-    <div class="site-section">
-        <div class="container">
-            <div class="row align-items-stretch section-overlap">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap bg-primary h-100">
-                        <a href="#" class="h-100">
-                            <h5>Free <br> Shipping</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap h-100">
-                        <a href="#" class="h-100">
-                            <h5>Season <br> Sale 50% Off</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <div class="banner-wrap bg-warning h-100">
-                        <a href="#" class="h-100">
-                            <h5>Buy <br> A Gift Card</h5>
-                            <p>
-                                Amet sit amet dolor
-                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">Popular Products</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <span class="tag">Sale</span>
-                    <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Bioderma</a></h3>
-                    <p class="price"><del>95.00</del> &mdash; $55.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Chanca Piedra</a></h3>
-                    <p class="price">$70.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                    <p class="price">$120.00</p>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-                    <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
-                    <p class="price"><del>45.00</del> &mdash; $20.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="shop-single.html"> <img src="images/product_05.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">CLA Core</a></h3>
-                    <p class="price">$38.00</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <span class="tag">Sale</span>
-                    <a href="shop-single.html"> <img src="images/product_06.png" alt="Image"></a>
-                    <h3 class="text-dark"><a href="shop-single.html">Poo Pourri</a></h3>
-                    <p class="price"><del>$89</del> &mdash; $38.00</p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="shop.html" class="btn btn-primary px-4 py-3">View All Products</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="site-section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">New Products</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 block-3 products-wrap">
-                    <div class="nonloop-block-3 owl-carousel">
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                        <div class="text-center item mb-4">
-                            <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                            <p class="price">$120.00</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="title-section text-center col-12">
-                    <h2 class="text-uppercase">Testimonials</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 block-3 products-wrap">
-                    <div class="nonloop-block-3 no-direction owl-carousel">
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="images/person_1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Kelly Holmes</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Rebecca Morando</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="images/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Lucas Gallone</p>
-                        </div>
-
-                        <div class="testimony">
-                            <blockquote>
-                                <img src="images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                                <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                                    unde.&rdquo;</p>
-                            </blockquote>
-
-                            <p>&mdash; Andrew Neel</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section bg-secondary bg-image" style="background-image: url('images/bg_2.jpg');">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
-                        <div class="banner-1-inner align-self-center">
-                            <h2>Pharma Products</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
-                        <div class="banner-1-inner ml-auto  align-self-center">
-                            <h2>Rated by Experts</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-
-                    <div class="block-7">
-                        <h3 class="footer-heading mb-4">About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
-                            sed dolorum excepturi iure eaque, aut unde.</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-                    <h3 class="footer-heading mb-4">Quick Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Supplements</a></li>
-                        <li><a href="#">Vitamins</a></li>
-                        <li><a href="#">Diet &amp; Nutrition</a></li>
-                        <li><a href="#">Tea &amp; Coffee</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="block-5 mb-5">
-                        <h3 class="footer-heading mb-4">Contact Info</h3>
-                        <ul class="list-unstyled">
-                            <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                            <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                            <li class="email">emailaddress@domain.com</li>
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                    <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-                        with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"
-                                                                                 class="text-primary">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/aos.js"></script>
-
-<script src="js/main.js"></script>
-
+<!--   Core JS Files   -->
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/argon-dashboard.min.js?v=2.1.0"></script>
 </body>
 
 </html>
