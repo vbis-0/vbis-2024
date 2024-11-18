@@ -2,9 +2,6 @@
 namespace app\controllers;
 
 use app\core\BaseController;
-use app\core\DbConnection;
-use app\core\View;
-use app\models\ProductModel;
 use app\models\UserModel;
 
 class UserController extends BaseController
@@ -13,11 +10,39 @@ class UserController extends BaseController
     {
 
         $model = new UserModel();
-        $model->get();
-
-       // $modelP = new ProductModel();
-       // $modelP->get();
+        $model->one("where id = 1");
 
         $this->view->render('getUser', 'main', $model);
+    }
+
+    public function readAll()
+    {
+        $model = new UserModel();
+
+        $results = $model->all("");
+
+        $this->view->render('users', 'main', $results);
+    }
+
+    public function updateUser()
+    {
+        $model = new UserModel();
+
+        $model->mapData($_GET);
+
+        $model->one("where id = $model->id");
+
+        $this->view->render('updateUser', 'main', $model);
+    }
+
+    public function processUpdateUser()
+    {
+        $model = new UserModel();
+
+        $model->mapData($_POST);
+
+        $model->update("where id = $model->id");
+
+        header('location:' . "/users");
     }
 }

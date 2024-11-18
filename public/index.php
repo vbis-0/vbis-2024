@@ -2,12 +2,20 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
+use app\controllers\ProductController;
 use app\controllers\UserController;
 use app\core\Application;
 
 $app = new Application();
 
 $app->router->get("/getUser", [UserController::class, 'readUser']);
+$app->router->get("/users", [UserController::class, 'readAll']);
+$app->router->get("/updateUser", [UserController::class, 'updateUser']);
+$app->router->post("/processUpdateUser", [UserController::class, 'processUpdateUser']);
+$app->router->get("/products", [ProductController::class, 'readProducts']);
+$app->router->get("/updateProduct", [ProductController::class, 'updateProduct']);
+$app->router->post("/processUpdateProduct", [ProductController::class, 'processUpdateProduct']);
 $app->router->get("/", [\app\controllers\HomeController::class, 'home']);
+
 
 $app->run();
